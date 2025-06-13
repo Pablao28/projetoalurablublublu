@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+    color: #f5f5f5;
+    padding: 30px;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #00ffe7;
+    text-shadow: 0 0 10px #00ffe7;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #ff00c8;
+    text-shadow: 0 0 5px #ff00c8;
+    font-size: 1rem;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 0 15px;
+}
+
+.cartao {
+    background: rgba(20, 20, 20, 0.8);
+    border: 2px solid #00ffe7;
+    border-radius: 16px;
+    box-shadow: 0 0 15px #00ffe7;
+    cursor: pointer;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+    backdrop-filter: blur(10px);
+}
+
+.cartao:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px #ff00c8, 0 0 10px #00ffe7;
+}
+
+.cartao__conteudo h3 {
+    font-size: 1.3rem;
+    color: #ff00c8
+}
